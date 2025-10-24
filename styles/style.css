@@ -102,7 +102,10 @@ ul {
   gap: 40px;
   list-style-type: none;
 }
-
+.staff {
+}
+.card__content {
+}
 .card {
   height: 420px;
   width: 360px;
