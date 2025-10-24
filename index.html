@@ -10,7 +10,6 @@
   </head>
 
   <body>
-    <!-- Envuelve todo el contenido de la página en un nuevo div con la clase page Recuerda agregar la etiqueta de cierre -->
     <div class="page">
       <header class="header">
         <nav class="nav">
@@ -19,19 +18,21 @@
             alt="Logotipo de la Biblioteca Triple Peaks"
             class="nav__logo"
           />
-          <!-- Se supone que poner enlaces de navegación en una lista es la mejor práctica para escribir el código semántico, ya que permite a los lectores de pantalla hacer una pausa entre cada enlace en lugar de leer todos los enlaces como una oración. -->
+
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Los preferidos de nuestro staff</a>
+              <a class="nav__link" href="#staff"
+                >Los preferidos de nuestro staff</a
+              >
             </li>
             <li>
-              <a class="nav__link">Eventos</a>
+              <a class="nav__link" href="#">Eventos</a>
             </li>
             <li>
-              <a class="nav__link">Conviértete en miembro</a>
+              <a class="nav__link" href="#">Conviértete en miembro</a>
             </li>
             <li>
-              <a class="nav__link">Contactos</a>
+              <a class="nav__link" href="#">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -60,80 +61,80 @@
       </header>
 
       <main class="content">
-        <div class="staff">
-          <!-- --------------------------------------------------------------- -->
-          <!--        No descomentar hasta la etapa final del proyecto.            -->
-          <!-- --------------------------------------------------------------- -->
-          <!--<h2 class="staff__title">Los preferidos de nuestro staff</h2>
-        <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
-        <ul>
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">Introducción a los algoritmos</h3>
-              <p class="card__text">
-                El nombre de este libro se explica por sí solo; ¡es una buena
-                Introducción a los algoritmos! Introducción a los algoritmos, o CLRS,
-                en referencia a los apellidos de los autores, profundiza y
-                abarca una serie de algoritmos a lo largo de varios capítulos
-                independientes.
-              </p>
-              <p class="card__footer">
-                Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
-                Clifford Stein
-              </p>
-            </div>
-          </li>
+        <section class="staff" id="staff">
+          <h2 class="staff__title">Los preferidos de nuestros lectores</h2>
+          <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
+          <ul class="staff__cards">
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">"El arte de la guerra"</h3>
+                <p class="card__text">
+                  Es un tratado militar de Sun Tzu que enfatiza la estrategia y
+                  la planificación para lograr la victoria, idealmente sin
+                  luchar. Se basa en principios clave como conocerse a uno mismo
+                  y al enemigo, engañar al adversario, y saber cuándo atacar y
+                  cuándo no. Las enseñanzas del libro, escritas hace milenios,
+                  son ampliamente aplicadas hoy en día en el mundo empresarial y
+                  otras áreas.
+                </p>
+                <p class="card__footer">Sun Tzu</p>
+              </div>
+            </li>
 
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">
-                La estructura e interpretación de los programas computacionales (SICP)
-              </h3>
-              <p class="card__text">
-                Este es uno de los mejores libros para aprender los conceptos básicos de
-                la programación. Incluido por el MIT en uno de sus cursos
-                básicos de programación, SICP es un libro de programación de carácter general
-                que utiliza Scheme para ilustrar diversos conceptos de programación.
-              </p>
-              <p class="card__footer">
-                Harold Abelson, Gerald Jay Sussman, Julie Sussman
-              </p>
-            </div>
-          </li>
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">"El Príncipe"</h3>
+                <p class="card__text">
+                  Es un tratado político de Nicolás Maquiavelo que aconseja a
+                  los gobernantes sobre cómo adquirir y mantener el poder,
+                  argumentando que a veces es necesario actuar de forma cruel o
+                  inmoral para lograr la estabilidad del estado. El libro
+                  explora diferentes tipos de principados, la importancia de un
+                  buen ejército y las cualidades que un gobernante necesita,
+                  sugiriendo que es más seguro ser temido que amado y que "el
+                  fin justifica los medios".
+                </p>
+                <p class="card__footer">Nicolás Maquiavelo</p>
+              </div>
+            </li>
 
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">
-                El programador limpio: un código de conducta para programadores profesionales
-              </h3>
-              <p class="card__text">
-                Compilado por el experimentado ingeniero de software y autor Robert C.
-                Martin (también conocido como "Tío Bob"), este libro abarca las
-                técnicas y herramientas de la verdadera artesanía de software. Explica
-                cómo escribir código limpio y muestra cómo cultivar la
-                actitud de un programador experto y profesional.
-              </p>
-              <p class="card__footer">Steve McConnell</p>
-            </div>
-          </li>
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  "Diálogos en el infierno entre Maquiavelo y Montesquieu"
+                </h3>
+                <p class="card__text">
+                  Es una obra satírica de Maurice Joly que imagina un debate
+                  entre Maquiavelo, defensor del despotismo, y Montesquieu,
+                  defensor del liberalismo. En el diálogo, Maquiavelo expone sus
+                  tácticas para suprimir la libertad a través de la manipulación
+                  y el control político, argumentando que el poder absoluto es
+                  una necesidad moderna y que la apatía del pueblo lo facilita.
+                  La obra, publicada en 1864, fue prohibida en Francia y luego
+                  se usó como base para una teoría conspirativa.
+                </p>
+                <p class="card__footer">Maurice Joly</p>
+              </div>
+            </li>
 
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">
-                Código completo: un manual práctico de construcción de software
-              </h3>
-              <p class="card__text">
-                ¿Te gustaría saber cómo escribir un buen código al margen de la
-                arquitectura del lenguaje de programación que hayas elegido? Después,
-                podrías leer Code Complete: A Practical Handbook of Software
-                Construction ("Código completo: un práctico manual sobre creación de software"). Este aborda de manera exhaustiva todo lo relacionado con
-                la buena estructura de código.
-              </p>
-              <p class="card__footer">Steve McConnell</p>
-            </div>
-          </li>
-        </ul>-->
-        </div>
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">"Padre Rico, Padre Pobre"</h3>
+                <p class="card__text">
+                  Promueve la educación financiera y enseña a los lectores a
+                  hacer que el dinero trabaje para ellos, en lugar de trabajar
+                  por dinero. El libro contrasta las mentalidades de su padre
+                  biológico (pobre) y el padre de su mejor amigo (rico),
+                  destacando la importancia de invertir en activos (como bienes
+                  raíces e inversiones) en lugar de pasivos, y fomenta el
+                  desarrollo de habilidades empresariales y la inteligencia
+                  financiera para alcanzar la libertad económica.
+                </p>
+                <p class="card__footer">Robert T. Kiyosaki</p>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
     </div>
   </body>
