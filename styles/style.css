@@ -17,8 +17,7 @@
   position: relative;
   box-sizing: border-box;
 }
-
-.nav {
+138 .nav {
   display: flex;
   justify-content: space-between;
 }
@@ -103,6 +102,10 @@ ul {
   list-style-type: none;
 }
 .staff {
+  margin-right: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card__content {
 }
@@ -121,8 +124,6 @@ ul {
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: auto;
-  display: flex;
-  justify-content: center;
 }
 .staff__title {
   margin-top: 50px;
