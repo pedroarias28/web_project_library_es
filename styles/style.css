@@ -379,6 +379,7 @@ ul {
 }
 
 .footer__social-icon {
+  margin-right: 10px;
 }
 
 .footer__copyright {
@@ -390,7 +391,4 @@ ul {
 }
 .footer__link {
   color: white;
-}
-.footer__logo-link {
-  margin-right: 10px;
 }
