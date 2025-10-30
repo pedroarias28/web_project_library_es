@@ -370,8 +370,7 @@ ul {
 
 .footer__list-item {
   color: white;
-  height: 16px;
-  margin-top: 0%;
+  margin-top: 16px;
 }
 
 .footer__column-link {
@@ -391,4 +390,7 @@ ul {
 }
 .footer__link {
   color: white;
+}
+.footer__logo-link {
+  margin-right: 10px;
 }
