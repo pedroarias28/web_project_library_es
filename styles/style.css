@@ -102,10 +102,10 @@ ul {
   list-style-type: none;
 }
 .staff {
-  margin-right: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .card__content {
 }
@@ -121,7 +121,6 @@ ul {
 }
 .content {
   background-image: url("/images/staff_picks_background.jpg");
-  background-position: 0%;
   background-repeat: no-repeat;
   background-size: auto;
 }
